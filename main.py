@@ -35,9 +35,9 @@ def show_notes(update, context):
         for note in notes:
             update.message.reply_text(note.strip())
 
-dispatcher.add_handler(telegram.ext.CommandHandler('show', show_notes))
-dispatcher.add_handler(telegram.ext.CommandHandler('save', save_text))
 dispatcher.add_handler(telegram.ext.CommandHandler('start', start))
+dispatcher.add_handler(telegram.ext.CommandHandler('save', save_text))
+dispatcher.add_handler(telegram.ext.CommandHandler('show', show_notes))
 
 updater.start_polling()
 updater.idle()
