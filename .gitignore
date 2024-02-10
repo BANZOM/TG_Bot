@@ -3,3 +3,4 @@ env
 *.txt
 *.db
 *.log
+__pycache__/
